@@ -19,17 +19,17 @@ export default function SiteFooter() {
               className="h-auto w-[160px] sm:w-[190px]"
             />
           </Link>
-          <p className="mt-4 max-w-[310px] text-sm leading-6 text-white/65">
+          <p className="mt-4 max-w-[310px] text-sm leading-6 text-white/90">
             Un accompagnement humain pour trouver le bon emploi plus
             rapidement et avancer avec confiance.
           </p> </div>
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-white/50">
+          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-white/75">
             Explorer
           </p>
           <nav
             aria-label="Navigation de pied de page"
-            className="mt-4 flex flex-col items-start gap-3 text-sm text-white/85"
+            className="mt-4 flex flex-col items-start gap-3 text-sm text-white"
           >
             <Link
               className="underline decoration-brand-yellow/0 decoration-2 underline-offset-4 transition-all duration-200 hover:translate-x-1 hover:text-brand-yellow hover:decoration-brand-yellow focus-visible:translate-x-1 focus-visible:text-brand-yellow focus-visible:decoration-brand-yellow focus-visible:outline-none"
@@ -52,22 +52,22 @@ export default function SiteFooter() {
           </nav>
         </div>
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-white/50">
+          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-white/75">
             Nous contacter
           </p>
-          <p className="mt-4 text-sm text-white/85">Casablanca, Maroc</p>
+          <p className="mt-4 text-sm text-white">Casablanca, Maroc</p>
           <a
             className="mt-3 inline-block text-sm font-semibold text-brand-yellow underline decoration-brand-yellow/0 decoration-2 underline-offset-4 transition-all duration-200 hover:translate-x-1 hover:text-white hover:decoration-brand-yellow focus-visible:text-white focus-visible:decoration-brand-yellow focus-visible:outline-none"
             href="tel:+212661138432"
           >
             +212 661 138 432
           </a>
-          <p className="mt-2 text-sm text-white/55">
+          <p className="mt-2 text-sm text-white/85">
             En présentiel et à distance
           </p>
         </div>
       </div>
-      <div className="mt-9 border-t border-white/15 pt-5 text-xs text-white/45">
+      <div className="mt-9 border-t border-white/15 pt-5 text-xs text-white/75">
         © <CopyrightYear /> Coaching 4 Job · Casablanca, Maroc
       </div>
     </div>
