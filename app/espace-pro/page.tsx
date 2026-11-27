@@ -18,14 +18,14 @@ export default function EspaceProPage() {
           height={500}
           className="pointer-events-none absolute -bottom-36 -left-28 hidden w-[480px] opacity-10 lg:block"
         />
-        <div className="relative w-full max-w-[560px]">
+        <div className="relative w-full max-w-[360px]">
           <Image
             src="/images/coaching4job-logo-transparent.png"
             alt="Coaching 4 Job"
-            width={2050}
-            height={312}
+            width={2148}
+            height={818}
             priority
-            className="h-auto w-full max-w-[560px]"
+            className="h-auto w-full max-w-[360px]"
           />
           <p className="mt-4 text-lg leading-snug text-white/85 sm:text-xl lg:text-2xl">
             Votre espace de suivi des inscriptions

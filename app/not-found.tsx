@@ -17,10 +17,10 @@ export default function NotFound() {
             <Image
               src="/images/coaching4job-logo.png"
               alt="Coaching 4 Job"
-              width={2050}
-              height={312}
+              width={2148}
+              height={818}
               priority
-              className="h-auto w-[190px] sm:w-[220px]"
+              className="h-[52px] w-auto"
             />
           </Link>
         </div>

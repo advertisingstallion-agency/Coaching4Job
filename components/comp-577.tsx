@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -9,10 +8,10 @@ import {
 } from "@/components/ui/navigation-menu";
 
 const navigationLinks = [
-  { href: "/#webinaire", label: "Webinaire" },
-  { href: "/#accompagnements", label: "Accompagnements" },
-  { href: "/#methode", label: "Méthode" },
   { href: "/#a-propos", label: "À propos" },
+  { href: "/#methode", label: "Méthode" },
+  { href: "/#accompagnements", label: "Accompagnements" },
+  { href: "/#webinaire", label: "Webinaire" },
 ];
 
 export default function Component() {
@@ -27,10 +26,10 @@ export default function Component() {
           <Image
             src="/images/coaching4job-logo.png"
             alt="Coaching 4 Job"
-            width={2050}
-            height={312}
-            sizes="(min-width: 1280px) 260px, (min-width: 640px) 230px, 180px"
-            className="h-auto w-[180px] sm:w-[230px] xl:w-[260px]"
+            width={2148}
+            height={818}
+            sizes="140px"
+            className="h-[36px] w-auto xl:h-[52px]"
             preload
           />
         </Link>
@@ -51,14 +50,6 @@ export default function Component() {
             ))}
           </NavigationMenuList>
         </NavigationMenu>
-        <Link
-          className="ml-auto inline-flex h-10 shrink-0 whitespace-nowrap items-center justify-center gap-3 rounded-full bg-brand-yellow px-4 text-xs font-bold text-brand-ink transition-transform hover:-translate-y-0.5 xl:h-[50px] xl:min-w-[200px] xl:gap-5 xl:px-6 xl:text-sm"
-          href="/#contact"
-        >
-          <span className="hidden sm:inline">Conférence en ligne</span>
-          <span className="sm:hidden">Conférence</span>
-          <ArrowRight aria-hidden="true" className="size-4 shrink-0" />
-        </Link>
       </div>
     </header>
   );

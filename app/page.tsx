@@ -8,6 +8,7 @@ import AboutOwner from "@/components/about-owner";
 import ConferenceCta from "@/components/conference-cta";
 import SiteFooter from "@/layout/site-footer";
 import ContactForm from "@/components/contact-form";
+import StickyCta from "@/components/sticky-cta";
 import { siteDescription, siteName, siteUrl } from "@/lib/site";
 
 const jsonLd = {
@@ -53,13 +54,13 @@ export default function Home() {
       <Component />
       <Hero />
       <Accompaniments />
-            <Webinar />
-
+      <Webinar />
       <Method />
       <Approach />
       {/* <ConferenceCta /> */}
       <AboutOwner />
       <ContactForm />
+      <StickyCta />
       <SiteFooter />
     </>
   );

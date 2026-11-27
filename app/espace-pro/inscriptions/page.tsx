@@ -113,10 +113,10 @@ async function InscriptionsContent({
             <Image
               src="/images/coaching4job-logo.png"
               alt="Coaching 4 Job"
-              width={2050}
-              height={312}
+              width={2148}
+              height={818}
               priority
-              className="h-auto w-[174px] sm:w-[225px]"
+              className="h-[52px] w-auto"
             />
           </Link>
           <nav aria-label="Navigation de l’espace pro" className="hidden h-full items-center gap-8 lg:flex">

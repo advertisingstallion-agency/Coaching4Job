@@ -1,11 +1,11 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowRight, Check } from "lucide-react";
+import { Check } from "lucide-react";
 import Navbar from "@/components/comp-577";
 import SiteFooter from "@/layout/site-footer";
+import StickyCta from "@/components/sticky-cta";
 import { accompaniments, getAccompaniment } from "@/lib/accompaniments";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -32,6 +32,7 @@ export default function AccompanimentPage({ params }: Props) {
       <Suspense fallback={<main className="min-h-svh bg-white" />}>
         <AccompanimentContent params={params} />
       </Suspense>
+      <StickyCta />
       <SiteFooter />
     </>
   );
@@ -60,13 +61,6 @@ async function AccompanimentContent({ params }: Props) {
             <p className="mt-5 max-w-[560px] text-pretty text-base leading-7 text-brand-muted sm:mt-6 sm:text-lg sm:leading-8">
               {item.audience}
             </p>
-            <Link
-              href="/#contact"
-              className="mt-8 inline-flex min-h-14 w-full items-center justify-between gap-7 whitespace-nowrap rounded-full bg-brand-yellow pl-7 pr-6 text-base font-bold sm:w-auto sm:justify-center text-brand-ink transition-transform hover:-translate-y-0.5"
-            >
-              Réserver ma place
-              <ArrowRight aria-hidden="true" className="size-4" />
-            </Link>
           </div>
           <div className="relative aspect-[1.05] w-full overflow-hidden bg-brand-soft">
             <Image
@@ -111,20 +105,6 @@ async function AccompanimentContent({ params }: Props) {
           </div>
         </section>
 
-        <section className="bg-brand-soft">
-          <div className="mx-auto flex max-w-[1360px] flex-col items-start justify-between gap-6 px-5 py-10 sm:px-10 sm:py-12 md:flex-row md:items-center lg:px-16">
-            <p className="max-w-[560px] text-balance text-xl font-bold sm:text-2xl leading-tight tracking-[-0.04em]">
-              Prêt à avancer vers le bon emploi ?
-            </p>
-            <Link
-              href="/#contact"
-              className="inline-flex min-h-14 w-full items-center justify-between gap-7 whitespace-nowrap rounded-full bg-brand-yellow pl-7 pr-6 text-base font-bold sm:w-auto sm:justify-center text-brand-ink transition-transform hover:-translate-y-0.5"
-            >
-              Réserver ma place
-              <ArrowRight aria-hidden="true" className="size-4" />
-            </Link>
-          </div>
-        </section>
       </main>
   );
 }

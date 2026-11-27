@@ -27,7 +27,7 @@ export default function Hero() {
         poster="/images/hero-poster.jpg"
         preload="auto"
       >
-        <source src="/hero.mp4" type="video/mp4" />
+        <source src="/women-hero.mp4" type="video/mp4" />
       </video>
       <div
         aria-hidden="true"

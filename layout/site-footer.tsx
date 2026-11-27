@@ -11,12 +11,12 @@ export default function SiteFooter() {
         <div>
           <Link className="inline-flex items-center gap-3" href="/#accueil">
             <Image
-              src="/images/coaching4job-logo-transparent.png"
+              src="/images/coaching4job-logo-light.png"
               alt="Coaching 4 Job"
-              width={2050}
-              height={312}
-              sizes="(min-width: 640px) 280px, 240px"
-              className="h-auto w-[240px] sm:w-[280px]"
+              width={2148}
+              height={818}
+              sizes="(min-width: 640px) 190px, 160px"
+              className="h-auto w-[160px] sm:w-[190px]"
             />
           </Link>
           <p className="mt-4 max-w-[310px] text-sm leading-6 text-white/65">

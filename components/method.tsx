@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 
 export default function Method() {
   return (
@@ -27,13 +25,6 @@ export default function Method() {
             marché marocain pour vous aider à clarifier votre objectif,
             préparer vos démarches et avancer plus vite vers le bon emploi.
           </p>
-          <Link
-            href="#contact"
-            className="mt-7 inline-flex min-h-14 w-full items-center justify-between gap-4 rounded-full bg-brand-yellow py-3 pl-6 pr-5 text-left text-[15px] font-semibold leading-snug text-brand-ink transition-transform hover:-translate-y-0.5 sm:w-auto sm:gap-8 sm:px-8 sm:text-base lg:mt-8 lg:w-full xl:w-auto xl:text-lg"
-          >
-            Réserver ma place à la conférence
-            <ArrowRight aria-hidden="true" className="size-4 shrink-0" />
-          </Link>
         </div>
         <div className="relative order-1 aspect-[1.3] w-full overflow-hidden bg-brand-soft sm:aspect-[1.56] lg:order-2">
           <Image
