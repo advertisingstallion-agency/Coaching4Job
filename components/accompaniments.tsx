@@ -59,7 +59,7 @@ export default function Accompaniments() {
                 <ArrowRight aria-hidden="true" className="size-4" />
               </Link>
             </div>
-            <p className="mt-3 max-w-[375px] text-[15px] leading-[1.6] text-brand-muted">
+            <p className="mt-3 max-w-[460px] text-[17px] leading-[1.6] text-[#2b2b2b]">
               {path.description}
             </p>
           </article>

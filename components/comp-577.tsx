@@ -18,7 +18,7 @@ const navigationLinks = [
 export default function Component() {
   return (
     <header className="relative z-20 border-b-2 border-brand-ink/45 bg-white">
-      <div className="relative mx-auto flex h-16 max-w-[1320px] items-center gap-4 px-5 sm:px-8 xl:h-[92px] xl:px-14">
+      <div className="relative mx-auto flex h-16 max-w-[1320px] items-center gap-4 px-5 sm:px-8 xl:h-[76px] xl:px-14">
         <Link
           href="/#accueil"
           aria-label="Coaching 4 Job, accueil"
@@ -30,7 +30,7 @@ export default function Component() {
             width={2148}
             height={818}
             sizes="140px"
-            className="h-[36px] w-auto xl:h-[52px]"
+            className="h-[36px] w-auto xl:h-[46px]"
             preload
           />
         </Link>
@@ -42,7 +42,7 @@ export default function Component() {
             {navigationLinks.map((link) => (
               <NavigationMenuItem key={link.label}>
                 <NavigationMenuLink
-                  className="nav-link !p-0 !pb-1.5 text-sm font-medium text-brand-ink hover:bg-transparent focus:bg-transparent"
+                  className="nav-link !p-0 !pb-1.5 text-sm font-semibold text-brand-ink hover:bg-transparent focus:bg-transparent"
                   href={link.href}
                 >
                   {link.label}
@@ -52,7 +52,7 @@ export default function Component() {
           </NavigationMenuList>
         </NavigationMenu>
         <Link
-          className="ml-auto inline-flex h-10 shrink-0 whitespace-nowrap items-center justify-center gap-3 rounded-full bg-brand-yellow px-4 text-xs font-bold text-brand-ink transition-transform hover:-translate-y-0.5 xl:h-[50px] xl:min-w-[200px] xl:gap-5 xl:px-6 xl:text-sm"
+          className="ml-auto inline-flex h-10 shrink-0 whitespace-nowrap items-center justify-center gap-3 rounded-full bg-brand-yellow px-4 text-xs font-bold text-brand-ink transition-transform hover:-translate-y-0.5 xl:h-[46px] xl:min-w-[200px] xl:gap-5 xl:px-6 xl:text-sm"
           href="/#contact"
         >
           <span className="hidden sm:inline">Conférence en ligne</span>
