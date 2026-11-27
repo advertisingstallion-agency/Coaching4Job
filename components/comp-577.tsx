@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -50,6 +51,14 @@ export default function Component() {
             ))}
           </NavigationMenuList>
         </NavigationMenu>
+        <Link
+          className="ml-auto inline-flex h-10 shrink-0 whitespace-nowrap items-center justify-center gap-3 rounded-full bg-brand-yellow px-4 text-xs font-bold text-brand-ink transition-transform hover:-translate-y-0.5 xl:h-[50px] xl:min-w-[200px] xl:gap-5 xl:px-6 xl:text-sm"
+          href="/#contact"
+        >
+          <span className="hidden sm:inline">Conférence en ligne</span>
+          <span className="sm:hidden">Conférence</span>
+          <ArrowRight aria-hidden="true" className="size-4 shrink-0" />
+        </Link>
       </div>
     </header>
   );
