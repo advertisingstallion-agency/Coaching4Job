@@ -45,9 +45,9 @@ export default function SiteFooter() {
             </Link>
             <Link
               className="underline decoration-brand-yellow/0 decoration-2 underline-offset-4 transition-all duration-200 hover:translate-x-1 hover:text-brand-yellow hover:decoration-brand-yellow focus-visible:translate-x-1 focus-visible:text-brand-yellow focus-visible:decoration-brand-yellow focus-visible:outline-none"
-              href="/#a-propos"
+              href="/propos"
             >
-              Notre approche
+              À propos
             </Link>
           </nav>
         </div>

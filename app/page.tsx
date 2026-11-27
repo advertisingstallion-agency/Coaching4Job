@@ -3,7 +3,6 @@ import Hero from "@/components/hero";
 import Webinar from "@/components/webinar";
 import Accompaniments from "@/components/accompaniments";
 import Method from "@/components/method";
-import Approach from "@/components/approach";
 import AboutOwner from "@/components/about-owner";
 import ConferenceCta from "@/components/conference-cta";
 import SiteFooter from "@/layout/site-footer";
@@ -56,7 +55,6 @@ export default function Home() {
       <Accompaniments />
       <Webinar />
       <Method />
-      <Approach />
       {/* <ConferenceCta /> */}
       <AboutOwner />
       <ContactForm />

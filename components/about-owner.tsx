@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { GraduationCap, Quote, Users } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, GraduationCap, Quote, Users } from "lucide-react";
 
 const facts = [
   { value: "18 ans", label: "dans le recrutement" },
@@ -114,6 +115,14 @@ export default function AboutOwner() {
               Autonomie, méthode et confiance
             </span>
           </div>
+
+          <Link
+            href="/propos"
+            className="mt-8 inline-flex min-h-12 w-full items-center justify-between gap-6 whitespace-nowrap rounded-full border-2 border-brand-ink px-6 text-base font-bold text-brand-ink transition-colors hover:bg-brand-ink hover:text-white sm:w-fit sm:justify-center"
+          >
+            Découvrir notre histoire
+            <ArrowRight aria-hidden="true" className="size-4" />
+          </Link>
         </div>
       </div>
     </section>

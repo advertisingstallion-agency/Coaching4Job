@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/navigation-menu";
 
 const navigationLinks = [
-  { href: "/#a-propos", label: "À propos" },
+  { href: "/propos", label: "À propos" },
   { href: "/#methode", label: "Méthode" },
   { href: "/#accompagnements", label: "Accompagnements" },
   { href: "/#webinaire", label: "Webinaire" },
